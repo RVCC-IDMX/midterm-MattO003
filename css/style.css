@@ -1,2 +1,32 @@
 /* Journey to the Center of the Earth Practicum */
 /* Matthew O'Dell */
+
+/*body {
+    background-color: #765729;
+} */
+
+header, nav, main, aside, footer {
+    border: 3px solid #886644;
+    padding: 2rem;
+    box-shadow: 10px 10px 30px inset;
+}
+
+header {
+    border-radius: 30px 30px 10px 10px;
+}
+
+nav {
+
+}
+
+main {
+
+}
+
+aside {
+
+}
+
+footer {
+    border-radius: 10px 10px 30px 30px;
+}
