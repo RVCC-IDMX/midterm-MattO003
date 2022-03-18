@@ -1,0 +1,213 @@
+/* Journey to the Center of the Earth Practicum */
+/* Matthew O'Dell */
+
+header, nav, main, aside, footer {
+    border: 3px solid #886644;
+    box-shadow: 10px 10px 30px inset;
+    background-color: white;
+    opacity: 0.75;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+header {
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(/img/cave.jpg);
+    background-position: center;
+    opacity: 1;
+    box-shadow: 20px 20px 20px inset;
+}
+
+/* Navigation */
+
+nav {
+    text-align: center;
+    padding-right: 10px;
+}
+
+nav li {
+    display: inline-block;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0 15px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li:first-child {
+    border-left: none;
+}
+
+main {
+    padding: 25px;
+    opacity: 0.75;
+}
+
+aside {
+    padding: 25px;
+}
+
+.submission {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.opinion {
+}
+
+.signature {
+    font-style: italic;
+    text-align: right;
+}
+
+footer {
+    padding: 25px;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 1px dashed #000000;
+}
+
+body {
+    background-image: linear-gradient(#765729, #000000);
+} 
+
+p:first-of-type::first-line {
+    font-size: larger;
+}
+
+/* Links */
+
+a:link {
+    color:#000000;
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #A52A2A;
+    text-decoration: underline;
+}
+
+/* Italicized text */
+
+:lang(fr) {
+    font-style: italic;
+}
+
+/* Bold text */
+
+.character {
+    font-weight: bold;
+}
+
+#cover {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float:left;
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+#crypto {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+#cryptogram {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Tablet size */
+@media screen and (min-width: 786px) {
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    aside h2 {
+        grid-column: 1/-1;
+    }
+    
+    aside.signature {
+        text-align: center;
+    }
+
+    aside.opinion {
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 3rem;
+    }
+}
+
+/* Destkop size */
+@media screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 20rem;
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer"
+        ;
+        
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+        display: block;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+
+
+
