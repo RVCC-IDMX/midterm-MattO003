@@ -60,8 +60,6 @@ aside {
 }
 
 .opinion {
-    /*flex: 1;
-    justify-content:right;*/
 }
 
 .signature {
@@ -148,17 +146,25 @@ a:hover {
 
 /* Tablet size */
 @media screen and (min-width: 786px) {
-    aside:nth-child(2n) {
+    aside {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 100px
-
-    }
-    h1{
-        font-size: 70px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
-    .submission {
+    aside h2 {
+        grid-column: 1/-1;
+    }
+    
+    aside.signature {
+        text-align: center;
+    }
+
+    aside.opinion {
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 3rem;
     }
 }
 
